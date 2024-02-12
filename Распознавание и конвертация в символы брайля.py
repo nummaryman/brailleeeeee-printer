@@ -89,7 +89,7 @@ while true: # Бесконечный цикл
             print ('=================================================================================================')
             e = RUSSIAN2Braiile(result)
             r = open(('/home/orangepi/bot/cal.txt','w', encoding='utf-8').write(e)
-            os.system("sudo gcc C_main.cpp -o blink -lWiringPi.h -lStepper.h -liostream -lstring -lfstream")
+            os.system("C_main")
             print (result)
             print ('=================================================================================================')
             playsound('audio/print.wav')
@@ -126,6 +126,8 @@ while true: # Бесконечный цикл
          if query != '':
             result = result + ' ' + query
             print (result) 
+
+
 
 
 
